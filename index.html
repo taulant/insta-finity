@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Insta Finity</title>
+	<style type="text/css">
+		body > * {
+			font-family: 'Monaco', monospace;
+		}
+		h4{
+			font-style: bold !important;
+			font-size: 26px;
+		}
+	</style>
+</head>
+<body>
+
+
+<h1>Insta Finity</h1>
+<h2>Calculating all possible image combinations of an instagram image.</h2>
+
+<h4>RGB Colors</h4>
+<p>256 x 256 x 256 = 16777216</p>
+
+<h4>Instagram resolution</h4>
+<p>612x612 = 374544</p>
+
+<h4>The formula to calculate</h4>
+<p>16777216^612x612</p>
+
+<script type="text/javascript">
+var resolution = (612 * 612)
+var rgbColors = (256 * 256 * 256)
+var possible = Math.pow(resolution,rgbColors);
+document.write(possible)
+</script>
+
+<h4>Calculated with <a href="http://www.wolframalpha.com/input/?i=16777216%5E374544" target="_blank">Wolfram Alfa</a>. Number of images ( a lot)</h4>
+<p>3.0810821940392719257684144083862204921534290 × 10^2705975</p>
+<script type="text/javascript">
+document.write(3.0810821940392719257684144083862204921534290e2705975)
+
+</script>
+<h4>Find out how many petabytes of memory do they take</h4>
+
+<h4>Credits</h4>
+<p>Example from <a href="http://www.davekoelle.com/imagespace.html">http://www.davekoelle.com/imagespace.html</a></p>
+<p>256^200x200</p>
+</body>
+</html>
